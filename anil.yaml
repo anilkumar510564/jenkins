@@ -1,1 +1,29 @@
+---
 
+- name: install git and figlet
+
+  hosts: localhost
+
+  tasks:
+
+     - name: install git
+
+       apt:
+
+         name: git
+
+         state: present
+
+     - name: install figlet
+
+       apt:
+
+         name: figlet
+
+         state: present
+
+       become: yes  
+
+        
+
+  
